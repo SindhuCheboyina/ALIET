@@ -1,3 +1,4 @@
+//creating the cache storage
 this.addEventListener('install',function(event){
   event.waitUntil(
     caches.open('mycache')
@@ -8,7 +9,7 @@ this.addEventListener('install',function(event){
     })
   )
 })
-// fetch
+// fetching the dta from cache
 this.addEventListener('fetch',function(event){
   event.respondWith(
     caches.open('mycache')
