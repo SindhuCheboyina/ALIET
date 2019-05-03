@@ -3,6 +3,7 @@ var open;
 var store;
 var result;
 var tx;
+//checking browser support for indexedDB
 var indexedDB=window.indexedDB || window.webkitIndexedDB ||window.mozIndexedDB || window.msIndexedDB;
   request=indexedDB.open("mydatabase",1);
   // onerror
